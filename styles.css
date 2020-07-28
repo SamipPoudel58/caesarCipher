@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+h1 {
+  font-family: "Ubuntu";
+  margin: 16px 0;
+  color: #222831;
+  border-bottom: #00adb5 solid 5px;
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plainText,
+.cipherText {
+  background-color: white;
+  box-shadow: 0px 0px 16px 8px #cecaca;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.plainText > h3,
+.cipherText > h3 {
+  background-color: #00adb5;
+  color: white;
+  font-size: 24px;
+  font-family: "Ubuntu";
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px 8px 0 0;
+  /* border-bottom: #e7e7e7 solid 2px; */
+}
+
+.fas {
+  font-size: 32px;
+  color: rgb(216, 216, 216);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.fas:hover {
+  color: #00adb5;
+}
+
+.middle {
+  background-color: white;
+  margin: 0 32px;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 300px;
+}
+
+#key {
+  margin: 32px 0;
+  width: 90%;
+  border: #00adb5 solid 2px;
+  height: 48px;
+  font-size: 20px;
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  width: 300px;
+  height: inherit;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: inherit;
+}
+
+.footer {
+  margin: 98px 0 48px;
+  display: block;
+  text-align: center;
+  color: gray;
+}
+
+@media screen and (max-width: 1033px) {
+  .middle {
+    width: 150px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 819px) {
+  .main {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .title {
+    margin-bottom: 0px;
+  }
+
+  .plainText,
+  .cipherText {
+    height: 200px;
+    margin: 0;
+    flex: 1;
+    width: 60%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  #key {
+    margin: 14px 0;
+  }
+
+  .middle {
+    margin: 20px 0;
+    width: 60%;
+    height: 150px;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .footer {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .plainText,
+  .cipherText,
+  .middle {
+    width: 80%;
+  }
+}

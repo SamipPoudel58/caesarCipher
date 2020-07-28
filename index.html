@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Caesar Cipher App</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Caesar Cipher App</h1>
+    </div>
+    <main class="main">
+        <div class="plainText">
+            <h3>Plain Text</h3>
+            <textarea name="plainInput" id="plainInput" placeholder="Enter the plain Text"></textarea>
+        </div>
+        <div class="middle">
+            <i id="plus" class="fas fa-plus-circle"></i>
+            <input name="key" id="key" type="text" placeholder="Key" value="1">
+            <i id="minus" class="fas fa-minus-circle"></i>
+
+        </div>
+        <div class="cipherText">
+            <h3>Cipher Text</h3>
+            <textarea name="cipherInput" id="cipherInput" placeholder="The Cipher Text"></textarea>
+        </div>
+    </main>
+    <p class="footer">Developed by Samip Poudel© 2020</p>
+    <script src="app.js"></script>
+</body>
+
+</html>
